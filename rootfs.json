@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Ubuntu 24.04 CLI rootfs (ChDroid)",
+    "description": "Clean Ubuntu 24.04 chroot for ChDroid. Plain rootfs tarball and chroot tools - no Magisk, KernelSU or APatch module, no boot scripts, no root-method detection. Installs to /data/local/ubuntu-chroot and runs from ChDroid's terminal. sha256: d74df317511bdad7641a99bbc371e2073a4f9f2abc61706eaf797e49b8e6c5a2",
+    "architecture": "aarch64",
+    "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-rootfs-v4.4-20260323.zip",
+    "size_bytes": 544309102,
+    "build_date": "20260323",
+    "author": "ChDroid"
+  }
+]
