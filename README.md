@@ -8,11 +8,12 @@ and root-method detection. None of that is part of this build.
 
 ## What ships
 
-Each release is one ZIP:
+Each release is one ZIP with the same clean layout:
 
 ```
-ChDroid-rootfs-v4.4-20260323.zip
-├── rootfs.tar.gz       Ubuntu 24.04 rootfs (plain tarball)
+ChDroid-rootfs-v4.4-20260323.zip          Ubuntu 24.04 CLI rootfs
+ChDroid-arch-rootfs-minimal-20261029.zip Arch Linux minimal rootfs
+├── rootfs.tar.gz / rootfs.tar.xz  plain distro rootfs tarball
 ├── chroot.sh           namespace/mount/DNS manager + CLI
 ├── post_exec.sh        startup hook called by chroot.sh
 ├── start-hotspot       terminal utility
@@ -21,6 +22,9 @@ ChDroid-rootfs-v4.4-20260323.zip
 ├── bin/busybox         static busybox
 └── manifest.json       release metadata (not module.prop)
 ```
+
+Installing a different distro replaces the existing rootfs (after stopping the running
+chroot). Installing the same distro again keeps existing rootfs data.
 
 Explicitly **absent**: `META-INF/`, `module.prop`, `install.sh`, `service.sh`,
 `uninstall.sh`, `update.json`, `webroot/`, `update-status.sh`, `ota/`, any
@@ -55,6 +59,11 @@ built-in download card. Schema matches the Droidspaces rootfs manifest (flat JSO
 
 ## Provenance
 
-Repackaged from `ravindu644/Ubuntu-Chroot` v4.4 CLI (`Ubuntu-Chroot-v4.4-20260323-CLI.zip`).
-Rootfs and chroot tools are upstream's; the module packaging, GUI webroot and OTA/module
-status scripts are removed. The installer and distribution are ChDroid's.
+- **Ubuntu 24.04**: repackaged from `ravindu644/Ubuntu-Chroot` v4.4 CLI
+  (`Ubuntu-Chroot-v4.4-20260323-CLI.zip`). Rootfs and chroot tools are upstream's; module
+  packaging, GUI webroot and OTA/module status scripts are removed.
+- **Arch Linux minimal**: upstream `Droidspaces-rootfs-builder` Arch rootfs
+  (`Arch-Minimal-Kernel-5.10-and-up-...tar.xz`, sha256 `e6f205afe7fc10b4682bdd8fc72bcf349308676bd9940c4dd7b9caecfe5b889f`),
+  bundled with ChDroid's clean tools. Requires kernel 5.10+.
+
+The installers and distribution are ChDroid's.
