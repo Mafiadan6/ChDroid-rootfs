@@ -1,20 +1,83 @@
 [
-  {
-    "name": "Ubuntu 24.04 CLI rootfs (ChDroid)",
-    "description": "Clean Ubuntu 24.04 base CLI rootfs for ChDroid. Rebuilt from upstream Droidspaces rootfs. Plain rootfs tarball and chroot tools - no Magisk, KernelSU or APatch module, no boot scripts, no root-method detection.",
-    "architecture": "aarch64",
-    "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-ubuntu-rootfs-20261029.zip",
-    "size_bytes": 561967118,
-    "build_date": "20261029",
-    "author": "ChDroid"
-  },
-  {
-    "name": "Arch Linux Minimal (ChDroid)",
-    "description": "Minimal Arch Linux aarch64 rootfs for ChDroid. Kernel 5.10+ required. Clean tarball and chroot tools - no Magisk, KernelSU or APatch module, no boot scripts, no root-method detection. Installs to /data/local/ubuntu-chroot and runs from ChDroid's terminal.",
-    "architecture": "aarch64",
-    "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-arch-rootfs-minimal-20261029.zip",
-    "size_bytes": 112393075,
-    "build_date": "20261029",
-    "author": "ChDroid"
-  }
+    {
+        "name": "Ubuntu 24.04 CLI rootfs (ChDroid)",
+        "description": "Clean Ubuntu 24.04 base CLI rootfs for ChDroid. Rebuilt from upstream Droidspaces rootfs. Plain rootfs tarball and chroot tools - no Magisk, KernelSU or APatch module, no boot scripts, no root-method detection.",
+        "architecture": "aarch64",
+        "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-ubuntu-rootfs-20261029.zip",
+        "size_bytes": 561967118,
+        "build_date": "20261029",
+        "author": "ChDroid"
+    },
+    {
+        "name": "Arch Linux Minimal (ChDroid)",
+        "description": "Minimal Arch Linux aarch64 rootfs for ChDroid. Kernel 5.10+ required. Clean tarball and chroot tools - no Magisk, KernelSU or APatch module, no boot scripts, no root-method detection. Installs to /data/local/ubuntu-chroot and runs from ChDroid's terminal.",
+        "architecture": "aarch64",
+        "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-arch-rootfs-minimal-20261029.zip",
+        "size_bytes": 112393075,
+        "build_date": "20261029",
+        "author": "ChDroid"
+    },
+    {
+        "name": "Debian 13 Minimal (ChDroid)",
+        "description": "Minimal Debian 13 aarch64 rootfs for ChDroid. Uses apt. Plain rootfs tarball and chroot tools - no module, no boot scripts, no root-method detection.",
+        "architecture": "aarch64",
+        "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-debian-13-rootfs-20261029.zip",
+        "size_bytes": 100020529,
+        "build_date": "20261029",
+        "author": "ChDroid"
+    },
+    {
+        "name": "Fedora 45 Minimal (ChDroid)",
+        "description": "Minimal Fedora 45 aarch64 rootfs for ChDroid. Uses dnf. Extracted from the official Fedora container base image. No module, no boot scripts, no root-method detection.",
+        "architecture": "aarch64",
+        "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-fedora-45-rootfs-20261029.zip",
+        "size_bytes": 56363025,
+        "build_date": "20261029",
+        "author": "ChDroid"
+    },
+    {
+        "name": "Alpine Minimal (ChDroid)",
+        "description": "Minimal Alpine aarch64 rootfs for ChDroid. Uses apk. Plain rootfs tarball and chroot tools - no module, no boot scripts, no root-method detection.",
+        "architecture": "aarch64",
+        "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-alpine-rootfs-20261029.zip",
+        "size_bytes": 11479696,
+        "build_date": "20261029",
+        "author": "ChDroid"
+    },
+    {
+        "name": "Artix Minimal (ChDroid)",
+        "description": "Minimal Artix Linux aarch64 OpenRC rootfs for ChDroid. Uses pacman. Plain rootfs tarball and chroot tools - no module, no boot scripts, no root-method detection.",
+        "architecture": "aarch64",
+        "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-artix-rootfs-20261029.zip",
+        "size_bytes": 169083739,
+        "build_date": "20261029",
+        "author": "ChDroid"
+    },
+    {
+        "name": "AzureLinux 3.0 Minimal (ChDroid)",
+        "description": "Minimal AzureLinux 3.0 aarch64 rootfs for ChDroid. Uses tdnf. Plain rootfs tarball and chroot tools - no module, no boot scripts, no root-method detection.",
+        "architecture": "aarch64",
+        "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-azurelinux-rootfs-20261029.zip",
+        "size_bytes": 88346200,
+        "build_date": "20261029",
+        "author": "ChDroid"
+    },
+    {
+        "name": "Kali Linux Minimal (ChDroid)",
+        "description": "Minimal Kali Linux aarch64 rootfs for ChDroid. Uses apt. Plain rootfs tarball and chroot tools - no module, no boot scripts, no root-method detection.",
+        "architecture": "aarch64",
+        "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-kali-rootfs-20261029.zip",
+        "size_bytes": 117393127,
+        "build_date": "20261029",
+        "author": "ChDroid"
+    },
+    {
+        "name": "OpenWrt 24.10 Minimal (ChDroid)",
+        "description": "Minimal OpenWrt 24.10 aarch64 rootfs for ChDroid. Uses opkg. Plain rootfs tarball and chroot tools - no module, no boot scripts, no root-method detection.",
+        "architecture": "aarch64",
+        "download_url": "https://github.com/Mafiadan6/ChDroid-rootfs/releases/download/v4.4/ChDroid-openwrt-rootfs-20261029.zip",
+        "size_bytes": 4344463,
+        "build_date": "20261029",
+        "author": "ChDroid"
+    }
 ]
