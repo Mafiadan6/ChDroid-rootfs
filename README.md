@@ -54,7 +54,7 @@ DirtyFrag or plain `su`. No module flash, no boot script, no reboot.
 
 ## Manifest
 
-[`rootfs.json`](rootfs.json) is the app-facing manifest. ChDroid fetches it to populate the
+[`manifest.json`](manifest.json) is the app-facing manifest. ChDroid fetches it to populate the
 built-in download card. Schema matches the Droidspaces rootfs manifest (flat JSON array).
 
 ## Provenance
